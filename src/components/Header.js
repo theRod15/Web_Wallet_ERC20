@@ -3,7 +3,7 @@ import React from 'react';
 export const Header = () => {
   return (
     <div className='header'>
-      <span>TOKEN NAME</span>
+      <span>MAS Token PIAIC ( MST )</span>
     </div>
   );
 };
