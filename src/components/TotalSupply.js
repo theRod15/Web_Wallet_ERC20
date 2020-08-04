@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { GlobalContext } from '../context/GlobalContext';
 
 export const TotalSupply = () => {
+  const { totalSupply } = useContext(GlobalContext);
+
   return (
     <div className='mainTab'>
-      <span className='Bal-Heading'>Total Supply</span>
-      <p className='balAmount'> 10,000.00 MST </p>
-      <div className=''>
-        <button type='submit' class='btn btn-primary btn-block'>
+      <h2>Total Supply</h2>
+      <p> {totalSupply} MST </p>
+      <div>
+        <button type='submit' className='btn btn-primary btn-block'>
           Get More info
         </button>
       </div>
