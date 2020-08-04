@@ -24,14 +24,15 @@ export const TokenBalance = () => {
     <div className='mainTab'>
       <h2>My Balance</h2>
 
-      <p>
+      <h3>
         {Math.abs(ethBalance).toFixed(8)} ETH <br />
         <span> {Math.abs(tokenBalance).toFixed(2)} MST </span>
+      </h3>
+
+      <p className='mt-5'>
+        <strong>My Wallet Address</strong>
+        <small className='form-text '>{account}</small>
       </p>
-
-      <strong>My Wallet Address</strong>
-
-      <small className='form-text '>{account}</small>
     </div>
   );
 };
