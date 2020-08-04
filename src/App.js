@@ -4,11 +4,13 @@ import { Header } from './components/Header';
 import { TokenBalance } from './components/TokenBalance';
 import { TotalSupply } from './components/TotalSupply';
 import { MoreInfo } from './components/MoreInfo';
+import { GlobalProvider } from './context/GlobalContext';
+
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Navbar />
       <div className='container'>
         <Header />
@@ -24,7 +26,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
