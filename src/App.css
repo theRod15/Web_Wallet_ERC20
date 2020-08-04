@@ -44,16 +44,17 @@ body {
   /* height: 320px; */
 }
 
-.mainTab > span {
+.mainTab > h2 {
   font-weight: bold;
+  color: var(--secondary);
   padding-bottom: 5px;
-  border-bottom: 2px solid var(--secondary);
+  border-bottom: 2px solid var(--primary);
 }
 
-.mainTab p {
-  font-size: 30px;
+.mainTab > p {
+  font-size: 22px;
   font-weight: bold;
   text-align: center;
   color: var(--midLight);
-  padding: 10px 0;
+  margin-top: 30px;
 }
