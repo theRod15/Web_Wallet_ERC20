@@ -18,10 +18,10 @@ export const GlobalProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, initState);
 
   useEffect(() => {
-    loadBlockchain();
+    loadBlockData();
   }, []);
 
-  async function loadBlockchain() {
+  async function loadBlockData() {
     try {
       const web3 = new Web3(Web3.givenProvider);
       await Web3.givenProvider.enable();
