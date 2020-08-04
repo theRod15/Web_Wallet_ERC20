@@ -1,1 +1,59 @@
+:root {
+  --main-dark: #282828;
+  --main-lightBlue: #3500d3;
+  --main-darkBlue: #0c0032;
+  --main-midBlue: #190061;
+  --primary: #333333;
 
+  --secondary: #cccccc;
+  /* --light: #bbbbbb; */
+  --midLight: #eeeeee;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.nav {
+  background-color: var(--main-dark);
+}
+.navbar-brand {
+  color: var(--midLight);
+}
+
+.header {
+  margin-top: 30px;
+  background-color: var(--main-dark);
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: var(--secondary);
+}
+
+.header span {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+.mainTab {
+  background-color: var(--main-dark);
+  margin-top: 30px;
+  padding: 30px;
+  color: var(--secondary);
+  border-radius: 10px;
+  /* height: 320px; */
+}
+
+.mainTab > span {
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--secondary);
+}
+
+.mainTab p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--midLight);
+  padding: 10px 0;
+}
