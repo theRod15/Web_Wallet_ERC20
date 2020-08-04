@@ -45,6 +45,17 @@ export const GlobalProvider = ({ children }) => {
     }
   }
 
+  async function transfer(transfer) {
+    const { web3, contract } = state;
+
+    const account = await web3.eth.getAccounts();
+
+    const res = await contract.methods
+      .transfer(transfer.address, transfer.amount)
+      .send({ from: account[0] });
+    console.log(res);
+  }
+
   // Actions
   function setWeb3(web3) {
     dispatch({
@@ -81,6 +92,7 @@ export const GlobalProvider = ({ children }) => {
         contract: state.contract,
         totalSupply: state.totalSupply,
         tokenBalance: state.tokenBalance,
+        transfer,
       }}
     >
       {children}
