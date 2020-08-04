@@ -23,7 +23,6 @@ body {
 }
 
 .header {
-  margin-top: 30px;
   background-color: var(--main-dark);
   padding: 20px 30px;
   border-radius: 10px;
@@ -51,10 +50,16 @@ body {
   border-bottom: 2px solid var(--primary);
 }
 
-.mainTab > p {
+.mainTab > h3 {
   font-size: 22px;
   font-weight: bold;
   text-align: center;
   color: var(--midLight);
   margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: var(--main-dark);
 }
